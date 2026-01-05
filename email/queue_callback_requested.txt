@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no" />
+  <title>Callback Request</title>
+  <style>
+    @media (max-width: 600px) {
+      .container { width: 100% !important; }
+      .px { padding-left: 16px !important; padding-right: 16px !important; }
+    }
+  </style>
+</head>
+
+<body style="margin:0; padding:0; background:#f5f7fb;">
+  <!-- Preheader -->
+  <div style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;">
+    Callback request received on %%PBX_WEB_DOMAIN%%.
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f5f7fb;">
+    <tr>
+      <td align="center" style="padding:24px 12px;">
+
+        <!-- Container -->
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" class="container"
+               style="width:600px; max-width:600px; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 6px 20px rgba(16,24,40,0.08);">
+
+          <!-- Header / Banner -->
+          <tr>
+            <td style="background:#2b72ff; padding:22px 24px;" class="px">
+              <div style="font-family:Arial, Helvetica, sans-serif; color:#ffffff; font-size:18px; font-weight:700;">
+                %%TENANT_NAME%%
+              </div>
+              <div style="font-family:Arial, Helvetica, sans-serif; color:#eaf0ff; font-size:13px; margin-top:6px;">
+                Callback request
+              </div>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:24px;" class="px">
+              <div style="font-family:Arial, Helvetica, sans-serif; color:#111827; font-size:14px; line-height:1.7;">
+
+                <p style="margin:0 0 14px;">
+                  <strong>%%DATA_TIME%%</strong>: a callback was requested on <strong>%%PBX_WEB_DOMAIN%%</strong>.
+                </p>
+
+                <!-- Details box -->
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:12px 0 14px 0;">
+                  <tr>
+                    <td style="border:1px solid #e5e7eb; background:#f9fafb; padding:12px 14px; border-radius:10px;">
+                      <div style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#111827; line-height:1.7;">
+                        <div><strong>PBX Domain:</strong> %%PBX_WEB_DOMAIN%%</div>
+                        <div><strong>Time:</strong> %%DATA_TIME%%</div>
+                        <div><strong>Queue:</strong> %%QUEUE_NUMBER%%</div>
+                        <div><strong>Queue name:</strong> %%QUEUE_NAME%%</div>
+                        <div><strong>Caller:</strong> %%CALLER_NUMBER%%</div>
+                        <div><strong>Callback number:</strong> %%CALL_BACK_NUMBER%%</div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+
+                <p style="margin:0; font-size:12.5px; color:#6b7280; line-height:1.7;">
+                  Please follow up with the caller as soon as possible to avoid missed contact.
+                </p>
+
+                <p style="margin:16px 0 0;">
+                  Best regards,<br />
+                  %%TENANT_NAME%%
+                </p>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:16px 24px; background:#f9fafb; border-top:1px solid #e5e7eb;" class="px">
+              <div style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#6b7280;">
+                This is an automated message from %%PBX_WEB_DOMAIN%%. Please do not reply.
+              </div>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

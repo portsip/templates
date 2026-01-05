@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no" />
+  <title>Report Ready - %%TENANT_NAME%%</title>
+  <style>
+    @media (max-width: 600px) {
+      .container { width: 100% !important; }
+      .px { padding-left: 16px !important; padding-right: 16px !important; }
+      .btn { display:block !important; width:100% !important; }
+    }
+  </style>
+</head>
+
+<body style="margin:0; padding:0; background:#f5f7fb;">
+  <!-- Preheader -->
+  <div style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;">
+    Your report is ready to download from %%PBX_WEB_DOMAIN%%.
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f5f7fb;">
+    <tr>
+      <td align="center" style="padding:24px 12px;">
+
+        <!-- Container -->
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" class="container"
+               style="width:600px; max-width:600px; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 6px 20px rgba(16,24,40,0.08);">
+
+          <!-- Header / Banner -->
+          <tr>
+            <td style="background:#2b72ff; padding:22px 24px;" class="px">
+              <div style="font-family:Arial, Helvetica, sans-serif; color:#ffffff; font-size:18px; font-weight:700;">
+                %%TENANT_NAME%%
+              </div>
+              <div style="font-family:Arial, Helvetica, sans-serif; color:#eaf0ff; font-size:13px; margin-top:6px;">
+                Report ready
+              </div>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:24px;" class="px">
+              <div style="font-family:Arial, Helvetica, sans-serif; color:#111827; font-size:14px; line-height:1.7;">
+                <p style="margin:0 0 14px;">Hello,</p>
+
+                <p style="margin:0 0 14px;">
+                  Your <strong>%%CALLREPORT_TYPE%%</strong> <strong>%%CALLREPORT_NAME%%</strong> is ready on
+                  <strong>%%PBX_WEB_DOMAIN%%</strong>.
+                </p>
+
+                <p style="margin:0 0 14px;">
+                  Please download the report file using the button below. If the button doesn’t work, copy and paste the link into your browser.
+                </p>
+
+                <!-- Button -->
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:14px 0 10px 0;">
+                  <tr>
+                    <td align="left">
+                      <a class="btn"
+                         href="%%CALLREPORT_LINK%%"
+                         style="background:#2b72ff; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif;
+                                font-size:14px; font-weight:700; padding:12px 18px; border-radius:10px; display:inline-block;">
+                        Download report
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Raw link -->
+                <div style="margin:0 0 6px 0; font-family:Arial, Helvetica, sans-serif; font-size:12.5px; color:#6b7280;">
+                  Download link:
+                </div>
+                <div style="word-break:break-all; border:1px solid #e5e7eb; background:#f9fafb; padding:10px 12px; border-radius:10px;">
+                  <a href="%%CALLREPORT_LINK%%" style="color:#2b72ff; text-decoration:underline;">
+                    %%CALLREPORT_LINK%%
+                  </a>
+                </div>
+
+                <p style="margin:16px 0 0;">
+                  Best regards,<br />
+                  %%TENANT_NAME%%
+                </p>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:16px 24px; background:#f9fafb; border-top:1px solid #e5e7eb;" class="px">
+              <div style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#6b7280;">
+                This is an automated message. Please do not reply.
+              </div>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

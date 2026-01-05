@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no" />
+  <title>Welcome to %%TENANT_NAME%%</title>
+  <style>
+    @media (max-width: 600px) {
+      .container { width: 100% !important; }
+      .px { padding-left: 16px !important; padding-right: 16px !important; }
+    }
+  </style>
+</head>
+
+<body style="margin:0; padding:0; background:#f5f7fb;">
+  <!-- Preheader -->
+  <div style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;">
+    Your %%TENANT_NAME%% user and extension profile details.
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f5f7fb;">
+    <tr>
+      <td align="center" style="padding:24px 12px;">
+
+        <!-- Container -->
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" class="container"
+               style="width:600px; max-width:600px; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 6px 20px rgba(16,24,40,0.08);">
+
+          <!-- Header / Banner -->
+          <tr>
+            <td style="background:#2b72ff; padding:22px 24px;" class="px">
+              <div style="font-family:Arial, Helvetica, sans-serif; color:#ffffff; font-size:18px; font-weight:700;">
+                %%TENANT_NAME%%
+              </div>
+              <div style="font-family:Arial, Helvetica, sans-serif; color:#eaf0ff; font-size:13px; margin-top:6px;">
+                New user registration details
+              </div>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:24px;" class="px">
+              <div style="font-family:Arial, Helvetica, sans-serif; color:#111827; font-size:14px; line-height:1.7;">
+                <p style="margin:0 0 14px;">Dear <strong>%%DISPLAY_NAME%%</strong>,</p>
+
+                <p style="margin:0 0 14px;">
+                  Congratulations! You have been successfully registered as a user of %%TENANT_NAME%%.
+                  Please check your profile below:
+                </p>
+
+                <!-- Details Card -->
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                       style="border:1px solid #e5e7eb; border-radius:10px; overflow:hidden;">
+                  <tr>
+                    <td style="background:#f9fafb; padding:12px 16px; border-bottom:1px solid #e5e7eb;">
+                      <strong style="font-family:Arial, Helvetica, sans-serif; font-size:14px;">
+                        Account & Extension Details
+                      </strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding:14px 16px;">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                             style="font-family:Arial, Helvetica, sans-serif; font-size:13px;">
+                        <tr>
+                          <td style="padding:10px 0; width:42%; color:#6b7280;">User Name</td>
+                          <td style="padding:10px 0;"><strong>%%USER_NAME%%</strong></td>
+                        </tr>
+                        <tr>
+                          <td style="padding:10px 0; color:#6b7280;">User Password</td>
+                          <td style="padding:10px 0;"><strong>%%USER_PASSWORD%%</strong></td>
+                        </tr>
+                        <tr>
+                          <td style="padding:10px 0; color:#6b7280;">Extension Number</td>
+                          <td style="padding:10px 0;"><strong>%%EXTENSION_NUMBER%%</strong></td>
+                        </tr>
+                        <tr>
+                          <td style="padding:10px 0; color:#6b7280;">Extension Password</td>
+                          <td style="padding:10px 0;"><strong>%%EXTENSION_PASSWORD%%</strong></td>
+                        </tr>
+                        <tr>
+                          <td style="padding:10px 0; color:#6b7280;">Voicemail PIN</td>
+                          <td style="padding:10px 0;"><strong>%%VOICEMAIL_PIN%%</strong></td>
+                        </tr>
+                        <tr>
+                          <td style="padding:10px 0; color:#6b7280;">SIP Domain</td>
+                          <td style="padding:10px 0;"><strong>%%DOMAIN%%</strong></td>
+                        </tr>
+                        <tr>
+                          <td style="padding:10px 0; color:#6b7280;">SIP Server Public IP</td>
+                          <td style="padding:10px 0;"><strong>%%SIP_PUBLIC_IP%%</strong></td>
+                        </tr>
+                        <tr>
+                          <td style="padding:10px 0; color:#6b7280;">SIP Server Private IP</td>
+                          <td style="padding:10px 0;"><strong>%%SIP_PRIVATE_IP%%</strong></td>
+                        </tr>
+                        <tr>
+                          <td style="padding:10px 0; color:#6b7280;">UDP Port</td>
+                          <td style="padding:10px 0;"><strong>%%UDP_PORT%%</strong></td>
+                        </tr>
+                        <tr>
+                          <td style="padding:10px 0; color:#6b7280;">TCP Port</td>
+                          <td style="padding:10px 0;"><strong>%%TCP_PORT%%</strong></td>
+                        </tr>
+                        <tr>
+                          <td style="padding:10px 0; color:#6b7280;">TLS Port</td>
+                          <td style="padding:10px 0;"><strong>%%TLS_PORT%%</strong></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- QR Code -->
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:18px;">
+                  <tr>
+                    <td align="center" style="padding:10px 0 0 0;">
+                      <div style="font-family:Arial, Helvetica, sans-serif; font-size:12.5px; color:#6b7280; margin-bottom:8px;">
+                        Scan to sign in
+                      </div>
+                      <img
+                        src="%%QR_CODE_URL%%"
+                        width="160"
+                        height="160"
+                        alt="QR code"
+                        style="display:block; width:160px; height:160px; border:0; outline:none; text-decoration:none; border-radius:10px;"
+                      />
+                    </td>
+                  </tr>
+                </table>
+
+                <p style="margin:16px 0 0; font-size:12.5px; color:#6b7280;">
+                  For security reasons, please keep your credentials confidential.
+                  If you did not expect this email, contact your system administrator.
+                </p>
+
+                <p style="margin:16px 0 0;">
+                  Best regards,<br />
+                  %%TENANT_NAME%%
+                </p>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:16px 24px; background:#f9fafb; border-top:1px solid #e5e7eb;" class="px">
+              <div style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#6b7280;">
+                This is an automated message. Please do not reply.
+              </div>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
