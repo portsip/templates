@@ -1,0 +1,1 @@
+These are the default HTML templates for PortSIP PBX email notifications. You can simply copy and paste these templates into PortSIP PBX by following the guide: **[Default HTML Templates](https://support.portsip.com/portsip-communications-solution/portsip-pbx-administration-guide/31-configuring-email-notifications/customizing-email-templates#default-html-templates)**.
