@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no" />
+  <title>Your PBX extension account details</title>
+  <style>
+    @media (max-width: 600px) {
+      .container { width: 100% !important; }
+      .px { padding-left: 16px !important; padding-right: 16px !important; }
+      .btn { display:block !important; width:100% !important; box-sizing:border-box !important; text-align:center !important; }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background:#f5f7fb;">
+  <!-- Template name: USER_CREATION -->
+  <!-- Description: New user account created notification -->
+  <!-- Email Subject: Your PBX extension account details -->
+  <div style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;">Your PBX extension account has been created.</div>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f5f7fb;">
+    <tr>
+      <td align="center" style="padding:24px 12px;">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" class="container" style="width:600px; max-width:600px; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 6px 20px rgba(16,24,40,0.08);">
+          <tr>
+            <td style="background:#2b72ff; padding:22px 24px;" class="px">
+              <div style="font-family:Arial, Helvetica, sans-serif; color:#ffffff; font-size:18px; font-weight:700;">%%TENANT_NAME%%</div>
+              <div style="font-family:Arial, Helvetica, sans-serif; color:#eaf0ff; font-size:13px; margin-top:6px;">New user account details</div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:24px;" class="px">
+              <div style="font-family:Arial, Helvetica, sans-serif; color:#111827; font-size:14px; line-height:1.7;">
+                <p style="margin:0 0 14px;">Dear <strong>%%DISPLAY_NAME%%</strong>,</p><p style="margin:0 0 14px;">Welcome. Your PBX account has been created successfully. Please see your login credentials and connection details below.</p><h3 style="font-family:Arial, Helvetica, sans-serif; font-size:15px; margin:18px 0 8px; color:#111827;">Web and app login credentials</h3><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:12px 0 14px 0;">
+                  <tr>
+                    <td style="border:1px solid #e5e7eb; background:#f9fafb; padding:12px 14px; border-radius:10px;">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#111827; line-height:1.6;">
+                        <tr>
+                          <td style="padding:8px 0; width:38%; color:#6b7280; border-bottom:1px solid #eef2f7; vertical-align:top;">User name</td>
+                          <td style="padding:8px 0; border-bottom:1px solid #eef2f7; vertical-align:top;"><strong>%%USER_NAME%%</strong></td>
+                        </tr>
+<tr>
+                          <td style="padding:8px 0; width:38%; color:#6b7280; vertical-align:top;">Password</td>
+                          <td style="padding:8px 0; vertical-align:top;"><strong>%%USER_PASSWORD%%</strong></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table><h3 style="font-family:Arial, Helvetica, sans-serif; font-size:15px; margin:18px 0 8px; color:#111827;">Extension details</h3><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:12px 0 14px 0;">
+                  <tr>
+                    <td style="border:1px solid #e5e7eb; background:#f9fafb; padding:12px 14px; border-radius:10px;">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#111827; line-height:1.6;">
+                        <tr>
+                          <td style="padding:8px 0; width:38%; color:#6b7280; border-bottom:1px solid #eef2f7; vertical-align:top;">Extension number</td>
+                          <td style="padding:8px 0; border-bottom:1px solid #eef2f7; vertical-align:top;"><strong>%%EXTENSION_NUMBER%%</strong></td>
+                        </tr>
+<tr>
+                          <td style="padding:8px 0; width:38%; color:#6b7280; border-bottom:1px solid #eef2f7; vertical-align:top;">Extension password</td>
+                          <td style="padding:8px 0; border-bottom:1px solid #eef2f7; vertical-align:top;"><strong>%%EXTENSION_PASSWORD%%</strong></td>
+                        </tr>
+<tr>
+                          <td style="padding:8px 0; width:38%; color:#6b7280; vertical-align:top;">Voicemail PIN</td>
+                          <td style="padding:8px 0; vertical-align:top;"><strong>%%VOICEMAIL_PIN%%</strong></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table><h3 style="font-family:Arial, Helvetica, sans-serif; font-size:15px; margin:18px 0 8px; color:#111827;">Advanced SIP / device configuration</h3><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:12px 0 14px 0;">
+                  <tr>
+                    <td style="border:1px solid #e5e7eb; background:#f9fafb; padding:12px 14px; border-radius:10px;">
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#111827; line-height:1.6;">
+                        <tr>
+                          <td style="padding:8px 0; width:38%; color:#6b7280; border-bottom:1px solid #eef2f7; vertical-align:top;">SIP domain / server</td>
+                          <td style="padding:8px 0; border-bottom:1px solid #eef2f7; vertical-align:top;"><strong>%%DOMAIN%%</strong></td>
+                        </tr>
+<tr>
+                          <td style="padding:8px 0; width:38%; color:#6b7280; border-bottom:1px solid #eef2f7; vertical-align:top;">PBX public IP</td>
+                          <td style="padding:8px 0; border-bottom:1px solid #eef2f7; vertical-align:top;"><strong>%%SIP_PUBLIC_IP%%</strong></td>
+                        </tr>
+<tr>
+                          <td style="padding:8px 0; width:38%; color:#6b7280; border-bottom:1px solid #eef2f7; vertical-align:top;">PBX private IP</td>
+                          <td style="padding:8px 0; border-bottom:1px solid #eef2f7; vertical-align:top;"><strong>%%SIP_PRIVATE_IP%%</strong></td>
+                        </tr>
+<tr>
+                          <td style="padding:8px 0; width:38%; color:#6b7280; vertical-align:top;">Ports</td>
+                          <td style="padding:8px 0; vertical-align:top;"><strong>UDP %%UDP_PORT%% | TCP %%TCP_PORT%% | TLS %%TLS_PORT%%</strong></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:12px 0 14px 0;">
+                  <tr>
+                    <td style="background:#fff7ed; border:1px solid #fed7aa; padding:12px 14px; border-radius:10px;">
+                      <div style="font-family:Arial, Helvetica, sans-serif; font-size:12.5px; color:#9a3412; line-height:1.6;">Please keep this email secure and do not share your passwords with anyone.</div>
+                    </td>
+                  </tr>
+                </table><p style="margin:16px 0 0;">Best regards,<br />%%TENANT_NAME%%</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:16px 24px; background:#f9fafb; border-top:1px solid #e5e7eb;" class="px">
+              <div style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#6b7280;">This is an automated message. Please do not reply.</div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
